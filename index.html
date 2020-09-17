@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>XT Coding Assignment</title>
+</head>
+<body>
+    <div class="container bg-gray mt-2">
+        <h4>SpaceX Launch Programs</h4>
+        <div class="row p-2">
+            <div class="col-md-3 bg-white bd-radius mb-x-1 py-2">
+                <h5 class="mb-0 mt-2">Filters</h5>
+                <p class="text-center mb-0">Launch Year</p>
+                <hr class="mx-5 mt-1">
+                <div class="row m-auto text-center">
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm">
+                           <a href="#" class="btn btn-primary" onclick="launch()">2006</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm">
+                           <a href="#" class="btn btn-success">2007</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2008</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2009</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2010</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2011</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2012</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2013</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2014</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2015</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2016</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2017</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2018</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2019</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm mt-2">
+                           <a href="#" class="btn btn-success">2020</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center mb-0 mt-2">Successful Launch</p>
+                <hr class="mx-5 mt-1">
+                <div class="row m-auto text-center">
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm">
+                           <a href="#" class="btn btn-success">True</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm">
+                           <a href="#" class="btn btn-success">False</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center mb-0 mt-2">Successful Landing</p>
+                <hr class="mx-5 mt-1">
+                <div class="row m-auto text-center">
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm">
+                           <a href="#" class="btn btn-success">True</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm">
+                           <a href="#" class="btn btn-success">False</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-t-20">
+                        <div class="h-100 p-3 bg-white bd-radius">
+                            <img src="images/falcon.png" alt="falcon" class="w-100 add-to-cart">
+                            <div class="pt-2">
+                                <h6 class="text-dark-blue fs-14">FalconSat #1</h6>
+                                <h6 class="fs-12 fw-700 mb-0">Mission Ids:</h6>
+                                <p class="mb-1"><span class="text-dark-blue">.</span> {list Mission Ids}</p>
+                                <h6 class="fs-12 fw-700">Launch Year: <span class="fw-400">2006</span></h6>
+                                <h6 class="fs-12 fw-700">Successful Launch: <span class="fw-400">False</span></h6>
+                                <h6 class="fs-12 fw-700">Successfull Landing: <span class="fw-400">{launch_landing}</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-t-20 col-md-6">
+                        <div class="h-100 p-3 bg-white bd-radius">
+                            <img src="images/demo.png" alt="demo" class="w-100">
+                            <div class="pt-2">
+                                <h6 class="text-dark-blue fs-14">DemoSat #2</h6>
+                                <h6 class="fs-12 fw-700 mb-0">Mission Ids:</h6>
+                                <p class="mb-1"><span class="text-dark-blue">.</span> {list Mission Ids}</p>
+                                <h6 class="fs-12 fw-700">Launch Year: <span class="fw-400">2006</span></h6>
+                                <h6 class="fs-12 fw-700">Successful Launch: <span class="fw-400">False</span></h6>
+                                <h6 class="fs-12 fw-700">Successfull Landing: <span class="fw-400">{launch_landing}</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-t-20 col-md-6">
+                        <div class="h-100 p-3 bg-white bd-radius">
+                            <img src="images/trailblazer.png" alt="trailblazer" class="w-100">
+                            <div class="pt-2">
+                                <h6 class="text-dark-blue fs-14">TrailblazerSat #3</h6>
+                                <h6 class="fs-12 fw-700 mb-0">Mission Ids:</h6>
+                                <p class="mb-1"><span class="text-dark-blue">.</span> {list Mission Ids}</p>
+                                <h6 class="fs-12 fw-700">Launch Year: <span class="fw-400">2006</span></h6>
+                                <h6 class="fs-12 fw-700">Successful Launch: <span class="fw-400">False</span></h6>
+                                <h6 class="fs-12 fw-700">Successfull Landing: <span class="fw-400">{launch_landing}</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-t-20 col-md-6">
+                        <div class="h-100 p-3 bg-white bd-radius">
+                            <img src="images/ratsat.png" alt="ratsat" class="w-100">
+                            <div class="pt-2">
+                                <h6 class="text-dark-blue fs-14">RatSat #4</h6>
+                                <h6 class="fs-12 fw-700 mb-0">Mission Ids:</h6>
+                                <p class="mb-1"><span class="text-dark-blue">.</span> {list Mission Ids}</p>
+                                <h6 class="fs-12 fw-700">Launch Year: <span class="fw-400">2006</span></h6>
+                                <h6 class="fs-12 fw-700">Successful Launch: <span class="fw-400">False</span></h6>
+                                <h6 class="fs-12 fw-700">Successfull Landing: <span class="fw-400">{launch_landing}</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="h-100 p-3 bg-white bd-radius">
+                            <img src="images/flight-number.png" alt="flight-number" class="w-100 add-to-cart">
+                            <div class="pt-2">
+                                <h6 class="text-dark-blue fs-14">{mission_name} #1 {flight_number}</h6>
+                                <h6 class="fs-12 fw-700 mb-0">Mission Ids:</h6>
+                                <p class="mb-1"><span class="text-dark-blue">.</span> {list Mission Ids}</p>
+                                <h6 class="fs-12 fw-700">Launch Year: <span class="fw-400">2006</span></h6>
+                                <h6 class="fs-12 fw-700">Successful Launch: <span class="fw-400">False</span></h6>
+                                <h6 class="fs-12 fw-700">Successfull Landing: <span class="fw-400">{launch_landing}</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-t-20 col-md-6">
+                        <div class="h-100 p-3 bg-white bd-radius">
+                            <img src="images/flight-number2.png" alt="flight-number2" class="w-100">
+                            <div class="pt-2">
+                                <h6 class="text-dark-blue fs-14">{mission_name} #1 {flight_number}</h6>
+                                <h6 class="fs-12 fw-700 mb-0">Mission Ids:</h6>
+                                <p class="mb-1"><span class="text-dark-blue">.</span> {list Mission Ids}</p>
+                                <h6 class="fs-12 fw-700">Launch Year: <span class="fw-400">2006</span></h6>
+                                <h6 class="fs-12 fw-700">Successful Launch: <span class="fw-400">False</span></h6>
+                                <h6 class="fs-12 fw-700">Successfull Landing: <span class="fw-400">{launch_landing}</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-t-20 col-md-6">
+                        <div class="h-100 p-3 bg-white bd-radius">
+                            <img src="images/flight-number3.png" alt="flight-number3" class="w-100">
+                            <div class="pt-2">
+                                <h6 class="text-dark-blue fs-14">{mission_name} #1 {flight_number}</h6>
+                                <h6 class="fs-12 fw-700 mb-0">Mission Ids:</h6>
+                                <p class="mb-1"><span class="text-dark-blue">.</span> {list Mission Ids}</p>
+                                <h6 class="fs-12 fw-700">Launch Year: <span class="fw-400">2006</span></h6>
+                                <h6 class="fs-12 fw-700">Successful Launch: <span class="fw-400">False</span></h6>
+                                <h6 class="fs-12 fw-700">Successfull Landing: <span class="fw-400">{launch_landing}</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-t-20 col-md-6">
+                        <div class="h-100 p-3 bg-white bd-radius">
+                            <img src="images/flight-number4.png" alt="flight-number4" class="w-100">
+                            <div class="pt-2">
+                                <h6 class="text-dark-blue fs-14">{mission_name} #1 {flight_number}</h6>
+                                <h6 class="fs-12 fw-700 mb-0">Mission Ids:</h6>
+                                <p class="mb-1"><span class="text-dark-blue">.</span> {list Mission Ids}</p>
+                                <h6 class="fs-12 fw-700">Launch Year: <span class="fw-400">2006</span></h6>
+                                <h6 class="fs-12 fw-700">Successful Launch: <span class="fw-400">False</span></h6>
+                                <h6 class="fs-12 fw-700">Successfull Landing: <span class="fw-400">{launch_landing}</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="text-center py-3">Developed by: Shweta Gupta</h4>
+    </div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
